@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="practice.js"></script>
+</head>
+
+<body>
+    <script>
+        /*var sum = 0, ave = 0;
+        for (var i = 1; i <= 100; i++) {
+            sum += i;
+        }
+        ave = sum / 100;
+        console.log(sum + '\n' + ave);*/
+
+        /*var str = '';
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                str += j + '×' + i + '=' + i * j + '\t';
+            }
+            str += '\n';
+        }
+        console.log(str);*/
+
+        /* do {
+             var userName = prompt('输入用户名：');
+             var pass = prompt('输入密码：');
+         } while (userName != 'admin' || pass != '123456')
+
+         alert('用户登陆成功！');*/
+        /* var sum = 0;
+         for (var i = 0; i <= 100; i++) {
+             if (i % 10 - 3 == 0)
+                 continue;
+             sum += i;
+         }
+         console.log(sum);*/
+        //ATM
+        /*var deposit = 100;
+
+        do {
+            var choose = prompt('操作类型：');
+            switch (choose - 0) {
+                case 1: var value = prompt('存入数额：');
+                    deposit += parseFloat(value);
+                    alert(deposit);
+                    break;
+                case 2: var value = prompt('取出数额：');
+                    deposit -= parseFloat(value);
+                    alert(deposit);
+                    break;
+                case 3:
+                    alert(deposit);
+                    break;
+                case 4:
+                    alert('exit!');
+                    break;
+            }
+
+        } while (choose != 4)*/
+
+
+        /*function Sum(n) {
+            var sum = 0;
+            for (var i = 1; i <= n; i++) {
+                sum += i;
+            }
+            console.log(sum);
+        }
+
+
+        Sum(10);*/
+
+        // function getSum(n1, n2) {
+        //     return n1 + n2;
+        // }
+
+        // var sum = getSum(1, 2);
+        // console.log(sum);
+        /*function Inverse() {
+            var newArr = [];
+            for (var i = arguments.length - 1; i >= 0; i--) {
+                newArr[newArr.length++] = arguments[i];
+            }
+            return newArr;
+        }
+        console.log(Inverse(1, 2, 3, 4, 5));*/
+
+
+
+        /*function sayHello() {
+            return sayHi();
+        }
+        function sayHi() {
+            console.log('你好！');
+        }
+        sayHello();*/
+
+
+        /*var obj = {
+            uname: '张三丰',
+            age: 18,
+            fn: function () {
+                console.log('你好！');
+            }
+        }
+
+        for (var k in obj) {
+            console.log(k);
+            console.log(obj[k]);
+        }*/
+
+
+        /*var da = new Date();
+        console.log(da);
+        var d = new Date(2022, 2, 3);
+        console.log(d);
+        var dd = new Date(2022, 0, 3);
+        console.log(dd);
+        var t = new Date('2022-5-1');
+        console.log(t);
+        var time = new Date();
+        console.log(time.getFullYear());
+        console.log(time.getMonth() + 1);
+        console.log(time.getDate());
+        console.log(time.getHours());
+        // console.log(time.getDay());
+        console.log(time.getMinutes());
+        console.log(time.getSeconds());*/
+
+        /*倒计时*/
+        /*var date1 = new Date(2022, 1, 5, 20, 0, 0);
+        console.log(date1);
+        var time1 = date1.valueOf();
+        console.log(time1);
+        var date2 = new Date();
+        console.log(date2);
+        var time2 = date2.valueOf();
+        console.log(time2);
+        var t = time1 - time2;
+        console.log(t);
+        t = t / 1000;
+        var d = parseInt(t / 3600 / 24);
+        console.log('剩余天数：', d);
+        var h = parseInt((t - d * 24 * 3600) / 3600);
+        console.log('剩余小时数：', h);
+        var m = parseInt((t - (d * 24 * 3600 + h * 3600)) / 60);
+        console.log('剩余分钟数：', m);
+        var s = parseInt(t - (d * 24 * 3600 + h * 3600 + m * 60));
+        //s = s > 9 ? s : '0' + s;
+        console.log('剩余秒数：', s);
+        // console.log((d > 9 ? d : '0' + d) + '天' + (h > 9 ? h : '0' + h));
+        d = d > 9 ? d : '0' + d;
+        h = h > 9 ? h : '0' + h;
+        m = m > 9 ? m : '0' + m;
+        s = s > 9 ? s : '0' + s;
+        var time = d + '天' + h + '时' + m + '分' + s + '秒';
+        console.log('倒计时：', time);*/
+        /*数组翻转*/
+        var arr = [1, 2, 3, 4, 5];
+        function reverse(arr) {
+            var newArr = new Array();
+            for (var i = 1; i < 6; i++) {
+
+                newArr.push(arr.pop());
+            }
+            return newArr;
+        }
+
+        console.log(reverse(arr));
+
+
+    </script>
+</body>
+
+</html>
